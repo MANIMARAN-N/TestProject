@@ -25,8 +25,8 @@ public class Employ {
 		return id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setId(int ids) {
+		id = ids;
 	}
 
 	public int getEmpId() {
