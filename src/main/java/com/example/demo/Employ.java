@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Entity
 @Table(name = "employee")
 
-public class Employee {
+public class Employ {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 

@@ -11,28 +11,28 @@ public class EmployeeDao {
 	@Autowired
 	EmployeeRepository empRepo;
 
-	public Employee postEmp(Employee e) {
+	public Employ postEmp(Employ e) {
 		return empRepo.save(e);
 		
 	}
 
-	public Employee getEmp(int id) {
+	public Employ getEmp(int id) {
 
 		return empRepo.findById(id).get();
 	}
 
-	public String addEmployees(List<Employee> emps) {
+	public String addEmployees(List<Employ> emps) {
 		// TODO Auto-generated method stub
 		empRepo.saveAll(emps);
 		return "Successfully saved";
 	}
 
-	public List<Employee> getEmployees() {
+	public List<Employ> getEmployees() {
 		// TODO Auto-generated method stub
 		return empRepo.findAll();
 	}
 
-	public String updateEmp(Employee id) {
+	public String updateEmp(Employ id) {
 		
 		empRepo.save(id);
 		return "Updated";

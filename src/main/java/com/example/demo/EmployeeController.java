@@ -22,12 +22,12 @@ public class EmployeeController {
 	EmployeeService ser;
 
 	@PostMapping(value = "/emp")
-	public Employee postEmp(@RequestBody Employee e) {
+	public Employ postEmp(@RequestBody Employ e) {
 		return ser.postEmp(e);
 	}
 	
 	@PutMapping(value  = "/emp/{id}")
-	public String updateEmp(@RequestBody Employee id) {
+	public String updateEmp(@RequestBody Employ id) {
 		return ser.updateEmp(id);
 	
 	}
@@ -36,7 +36,7 @@ public class EmployeeController {
 		return ser.removeEmp(id);
 	}
 	@GetMapping(value = "/emp/{id}")
-	public Employee getEmp(@PathVariable int id) {
+	public Employ getEmp(@PathVariable int id) {
 		return ser.getEmp(id);
 	}
 
@@ -46,7 +46,7 @@ public class EmployeeController {
 //	}
 
 	@GetMapping(value = "/emp")
-	public List<Employee> getEmployees() {
+	public List<Employ> getEmployees() {
 		return ser.getEmployees();
 	}
 //	@GetMapping(value = "/getFemaleEmployee")
